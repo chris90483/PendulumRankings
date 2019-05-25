@@ -1,0 +1,9 @@
+{
+    "name": "hcjansen/pendulumrankings",
+    "description": "Website to rank Pendulum songs",
+    "type": "project",
+    "require": {
+        "slim/slim": "3.12"
+    },
+    "license": "MIT"
+}
