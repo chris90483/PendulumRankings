@@ -5,8 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style>
-        <?php include 'style.css'; ?>
-        <?php include 'style_submit.css'; ?>
+        <?php include 'css/style.css'; ?>
+        <?php include 'css/style_list.css'; ?>
     </style>
     <script src="node_modules/table-dragger/dist/table-dragger.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>

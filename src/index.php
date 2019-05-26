@@ -8,7 +8,7 @@
     <title>Pendulum Rankings</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <style>
-        <?php include 'style.css'; ?>
+        <?php include 'css/style.css'; ?>
     </style>
 </head>
 

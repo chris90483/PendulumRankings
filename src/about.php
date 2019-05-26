@@ -4,16 +4,16 @@
     <title>Pendulum Rankings</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <style>
-        <?php include 'style.css'; ?>
-        .about_title {font-size: 175%;}
-        .about_text {font-size: 125%;}
+        <?php include 'css/style.css'; ?>
+        .about_title {font-size: 165%;}
+        .about_text {font-size: 115%;}
         /*@media only screen and (min-width: 812px) {*/
         /*    .about_title {font-size: 175%;}*/
         /*    .about_text {font-size: 125%;}*/
         /*}*/
         @media only screen and (min-width: 1280px) {
-            .about_title {font-size: 200%;}
-            .about_text {font-size: 150%;}
+            .about_title {font-size: 190%;}
+            .about_text {font-size: 140%;}
         }
 
     </style>
@@ -27,13 +27,18 @@
 <br><br><br>
     <h1 class="about_title main_title title">About</h1>
     <h3 class="about_text sub_title title">Welcome! This website was made to poll the popularity of each song produced by the band Pendulum.</h3>
+<br>
     <h1 class="about_title main_title title">How?</h1>
     <h3 class="about_text sub_title title">You can <a href="submit.php">Submit</a> a list of your favourite Pendulum songs. Only the songs that you
     ranked will be submitted. The <a href="rankings.php">Rankings</a> page will show the average ranking
     of every song!</h3>
+<br>
     <h1 class="about_title main_title title">Backend</h1>
-    <h3 class="about_text sub_title title">Behind the scenes we use <a href="https://php.net/">PHP 7.2</a>,&nbsp;
-        <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://dev.mysql.com/">MySQL</a></h3>
+    <h3 class="about_text sub_title title">Behind the scenes we use <a href="https://php.net/">PHP 7.3</a>,&nbsp;
+        <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://dev.mysql.com/">MySQL</a>. Interested
+    in the details? Our <a href="https://github.com/chris90483/PendulumRankings">repository</a>
+    is public.</h3>
+<br>
     <h1 class="about_title main_title title">Frontend</h1>
     <h3 class="about_text sub_title title">The visuals were made with CSS and <a href="https://jquery.com/">JQuery</a>.
         Table ordering was made possible by <a href="https://sindu12jun.github.io/table-dragger/">

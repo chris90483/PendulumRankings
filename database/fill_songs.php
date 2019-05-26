@@ -5,7 +5,7 @@ mysqli_report(MYSQLI_REPORT_ALL);
 $json_string = file_get_contents('../songs.json');
 $data = json_decode($json_string, true);
 
-$mysqli = new mysqli('localhost', 'mauk', '123', 'PendulumRankingsDB');
+$mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
 
 $query = <<<SQL
 INSERT INTO songs (id, link, album, name)

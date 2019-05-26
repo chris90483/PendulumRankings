@@ -6,18 +6,18 @@
     <title>Pendulum Rankings</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <style>
-        <?php include 'style.css'; ?>
+        <?php include 'css/style.css'; ?>
+        <?php include 'css/style_list.css' ?>
     </style>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script><?php include "scripts/rankings.js" ?></script>
 </head>
 
 <body>
-<?php include "nav.html" ?>
-<?php
+<?php include "nav.html";
 //    mysqli_report(MYSQLI_REPORT_ALL);
 
-    $mysqli = new mysqli('localhost', 'mauk', '123', 'PendulumRankingsDB');
+    $mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
 
     $query = "SELECT * FROM songs ORDER BY average_rank";
 
