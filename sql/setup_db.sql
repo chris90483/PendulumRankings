@@ -1,5 +1,7 @@
-# DROP DATABASE PendulumRankingsDB;
-# CREATE DATABASE PendulumRankingsDB;
+DROP DATABASE PendulumRankingsDB;
+CREATE DATABASE PendulumRankingsDB;
+
+USE PendulumRankingsDB;
 
 set FOREIGN_KEY_CHECKS = 1;
 
@@ -24,8 +26,7 @@ BEGIN
     DECLARE count INT Default 0;
     simple_loop: LOOP
         SET @a := count + 1;
-        SET @statement = CONCAT('Create table votes_song_',@a,' ( id varchar(255),
-                                                                rank int);');
+        SET @statement = CONCAT('CREATE TABLE `votes_song_', @a, '`(`id` VARCHAR(255), `rank` INT)');
         PREPARE stmt FROM @statement;
         EXECUTE stmt;
         DEALLOCATE PREPARE stmt;
