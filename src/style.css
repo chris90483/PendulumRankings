@@ -46,8 +46,6 @@ html {
 
 .sub_title, .main_title, .table_title {
     /* alignment */
-    margin-left:25%;
-    margin-right:25%;
     text-align : center;
 
     /* font */
@@ -56,6 +54,19 @@ html {
     background : -webkit-linear-gradient(#e1e1e1, #a0a0a0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-width: 812px) {
+    .sub_title, .main_title {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .sub_title, .main_title {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
 }
 
 .title a {

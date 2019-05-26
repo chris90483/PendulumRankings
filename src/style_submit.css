@@ -28,25 +28,32 @@ th, td {
 }
 
 .song_rank {
-
+    font-size : 200%;
 }
 
 .song_title {
-
+    font-size : 200%;
 }
 
 .song_listen th {
 
 }
 
+#table_container {
+    margin-left : 0;
+    margin-right: 0;
+}
+
+/* table padding rules */
 @media only screen and (min-width: 812px) {
     .spotify_embed {
         width: 33%;
         height: 25vh;
     }
 
-    #table_padder_left, #table_padder_right {
-        width : 15%;
+    #table_container {
+        margin-left : 15vw;
+        margin-right: 15vw;
     }
 }
 
@@ -56,7 +63,54 @@ th, td {
         height: 25vh;
     }
 
-    #table_padder_left, #table_padder_right {
-        width : 20%;
+    #table_container {
+        margin-left : 20vw;
+        margin-right: 20vw;
     }
+}
+
+.send_button {
+    border : 2px solid white;
+    border-radius : 20%;
+    width : 20vw;
+    margin-left : 40vw;
+    margin-right : 40vw;
+}
+
+.unranked_divider {
+    font-family : 'Orbitron', sans-serif;
+    font-size : 180%;
+    letter-spacing: 0;
+    position: relative;
+    text-wrap : none;
+    width : 100%;
+}
+
+.send_button:hover {
+    cursor : pointer;
+}
+
+#submit_confirm, #submit_deconfirm {
+    margin-top : 5px;
+    margin-bottom: 5px;
+}
+
+#submit_confirm, #submit_deconfirm, #submission_msg {
+    display : none;
+}
+
+input {
+    display : none;
+}
+
+
+/* fix dragging library style */
+/* remove red table background */
+.sindu_dragger table{
+    background: none!important;
+}
+
+/* remove ghost when dragging */
+.gu-mirror {
+    display : none;
 }

@@ -8,22 +8,19 @@
         <?php include 'style.css'; ?>
         <?php include 'style_submit.css'; ?>
     </style>
-    <script src="../node_modules/table-dragger/dist/table-dragger.min.js"></script>
+    <script src="node_modules/table-dragger/dist/table-dragger.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
     <script><?php include 'scripts/submit.js'; ?></script>
 </head>
 
 <body>
 
-<h3 class="sub_title title">Back to the <a href="index.php">frontpage</a></h3>
-<h3 class="sub_title title">Go to the <a href="rankings.php">rankings</a></h3>
+<h3 class="sub_title title" style="font-size:200%;letter-spacing:0.10em">Back to the <a href="index.php">frontpage</a></h3>
+<h3 class="sub_title title" style="font-size:200%;letter-spacing:0.10em">Go to the <a href="rankings.php">rankings</a></h3>
 <br>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
-    <div class="table-container">
-        <table>
-        <tr>
-            <td id="table_padder_left"></td>
-            <td>
+        <div id="table_container">
             <table id="song_list" class="w3-table w3-bordered w3-centered">
                 <thead>
                     <tr>
@@ -33,41 +30,34 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr onmouseover="highlight(this)" onmouseout="restore(this)">
-                        <td class="song_rank"><?php echo "1" ?></td>
-                        <td class="song_title"><?php echo "Propane Nightmares" ?></td>
+                    <tr id="unranked_divider" class="song_entry">
+                        <td></td>
+                        <td class="unranked_divider sub_title title"><b>Drag songs above this line to rank them</b></td>
+                        <td></td>
+                    </tr>
+                    <tr class="song_entry">
+                        <td class="draggable song_rank">-</td>
+                        <td class="draggable song_title"><?php echo "Propane Nightmares" ?></td>
                         <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/6tC2iHfUlzB2W4ntXXL2BH" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
                     </tr>
-                    <tr onmouseover="highlight(this)" onmouseout="restore(this)">
-                        <td class="song_rank"><?php echo "2" ?></td>
-                        <td class="song_title"><?php echo "Hold Your Colour" ?></td>
+                    <tr class="song_entry">
+                        <td class="draggable song_rank">-</td>
+                        <td class="draggable song_title"><?php echo "Hold Your Colour" ?></td>
                         <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/2pZXlPFnqc1uqEKFE7SjwQ" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
                     </tr>
-                    <tr onmouseover="highlight(this)" onmouseout="restore(this)">
-                        <td class="song_rank">3</td>
-                        <td class="song_title"><?php echo "Visions" ?></td>
+                    <tr class="song_entry">
+                        <td class="draggable song_rank">-</td>
+                        <td class="draggable song_title"><?php echo "Visions" ?></td>
                         <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/7FD0CKDpCLiyt91NZqEhhf" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
                     </tr>
                 </tbody>
             </table>
-            </td>
-            <td id="table_padder_right"></td>
-        </tr>
-        </table>
-    </div>
-    <input type="submit">
+        </div>
+    <br>
+    <div id="submit" class="send_button sub_title title" onclick="showSubmit()">Submit</div>
+    <p id="submission_msg" class="sub_title title"> Are you sure?</p>
+    <div id="submit_confirm" class="send_button sub_title title" onclick="submit()">Yes</div>
+    <div id="submit_deconfirm" class="send_button sub_title title" onclick="deconfirmSubmit()">No</div>
 </form>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $name = htmlspecialchars($_REQUEST['fname']);
-    if (empty($name)) {
-        echo "Name is empty";
-    } else {
-        echo $name;
-    }
-}
-?>
 </body>
 </html>
