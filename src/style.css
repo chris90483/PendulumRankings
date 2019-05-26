@@ -1,0 +1,70 @@
+
+@-webkit-keyframes rotate {
+    0%{background-position:bottom left}
+    25%{background-position:top left}
+    50%{background-position:top right}
+    75%{background-position:bottom right}
+    100%{background-position:bottom left}
+}
+@-moz-keyframes rotate {
+    0%{background-position:bottom left}
+    25%{background-position:top left}
+    50%{background-position:top right}
+    75%{background-position:bottom right}
+    100%{background-position:bottom left}
+}
+
+@keyframes rotate {
+    0%{background-position:bottom left}
+    25%{background-position:top left}
+    50%{background-position:top right}
+    75%{background-position:bottom right}
+    100%{background-position:bottom left}
+}
+
+html {
+    height: 100vh;
+    background-image : radial-gradient(rgb(12, 80, 12), rgb(0, 0, 0));
+    background-size: 200% 200%;
+
+    /* animation stuffs */
+    -webkit-animation: rotate 40s ease infinite;
+    -moz-animation: rotate 40s ease infinite;
+    animation : rotate 40s ease infinite;
+}
+
+.main_title {
+    font-size : 6vh;
+}
+
+.sub_title {
+    font-size : 2.5vh;
+}
+
+.sub_title, .main_title {
+    /* alignment */
+    margin-left:25%;
+    margin-right:25%;
+    text-align : center;
+
+    /* font */
+    font-family : 'Orbitron', sans-serif;
+    letter-spacing: 0.15em;
+    background : -webkit-linear-gradient(#e1e1e1, #a0a0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title a {
+    background : -webkit-linear-gradient(rgb(56, 99, 255), rgba(16, 80, 153, 0.84));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#main_text {
+    text-align: center;
+}
+
+#main_text_container {
+    margin-top : 40vh;
+}
