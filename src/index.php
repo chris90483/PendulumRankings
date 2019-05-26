@@ -16,6 +16,7 @@
 <div id="main_text_container">
     <h1 class="main_title title">Pendulum Rankings</h1>
     <h3 class="sub_title title"><a href="submit.php">Rank</a> your favourite Pendulum songs<br> and see what <a href="rankings.php">others think!</a></h3>
+    <h3 class="sub_title title" id="main_about"><a href="about.php">About</a></h3>
 </div>
 </body>
 </html>

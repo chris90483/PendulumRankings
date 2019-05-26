@@ -4,6 +4,8 @@ $("document").ready(function(){
         dragHandler : ".draggable",
         onlyBody : true
     });
+    document.getElementsByClassName("navitem")[2].innerText = "Submit";
+    document.addEventListener("mouseup", updateRanks, false);
 });
 
 function deconfirmSubmit() {
@@ -39,5 +41,3 @@ function updateRanks() {
         }
     }
 }
-
-document.addEventListener("mouseup", updateRanks, false);

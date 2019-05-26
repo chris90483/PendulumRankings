@@ -8,9 +8,12 @@
     <style>
         <?php include 'style.css'; ?>
     </style>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script><?php include "scripts/rankings.js" ?></script>
 </head>
 
 <body>
+<?php include "nav.html" ?>
 <?php
 //    mysqli_report(MYSQLI_REPORT_ALL);
 

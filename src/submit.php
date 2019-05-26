@@ -15,9 +15,8 @@
 
 <body>
 
-<h3 class="sub_title title" style="font-size:200%;letter-spacing:0.10em">Back to the <a href="index.php">frontpage</a></h3>
-<h3 class="sub_title title" style="font-size:200%;letter-spacing:0.10em">Go to the <a href="rankings.php">rankings</a></h3>
-<br>
+<?php include 'nav.html' ?>
+<br><br>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
         <div id="table_container">
