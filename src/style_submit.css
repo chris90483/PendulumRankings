@@ -3,10 +3,60 @@
     height: 10vh;
 }
 
+
+iframe {
+    width : 80px;
+}
+
+table {
+    width : 100%;
+}
+
+th {
+    font-size : 200%;
+}
+
+td {
+    font-size : 130%;
+}
+
+th, td {
+    font-family : 'Orbitron', sans-serif;
+    background : -webkit-linear-gradient(#e1e1e1, #a0a0a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.song_rank {
+
+}
+
+.song_title {
+
+}
+
+.song_listen th {
+
+}
+
 @media only screen and (min-width: 812px) {
     .spotify_embed {
         width: 33%;
         height: 25vh;
     }
+
+    #table_padder_left, #table_padder_right {
+        width : 15%;
+    }
 }
 
+@media only screen and (min-width: 1280px) {
+    .spotify_embed {
+        width: 33%;
+        height: 25vh;
+    }
+
+    #table_padder_left, #table_padder_right {
+        width : 20%;
+    }
+}

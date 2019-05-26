@@ -44,7 +44,7 @@ html {
     font-size : 2.5vh;
 }
 
-.sub_title, .main_title {
+.sub_title, .main_title, .table_title {
     /* alignment */
     margin-left:25%;
     margin-right:25%;
