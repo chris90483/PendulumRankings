@@ -1,0 +1,238 @@
+{
+  "songs": [
+    {
+      "name": "prelude",
+      "id": 1,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "slam",
+      "id": 2,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "plasticworld",
+      "id": 3,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "fasten_your_seatbelt",
+      "id": 4,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "through_the_loop",
+      "id": 5,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "sounds_of_life",
+      "id": 6,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "girl_in_the_fire",
+      "id": 7,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "tarantula",
+      "id": 8,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "out_here",
+      "id": 9,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "hold_your_colour",
+      "id": 10,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "the_terminal",
+      "id": 11,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "streamline",
+      "id": 12,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "blood_sugar",
+      "id": 13,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "axle_grinder",
+      "id": 14,
+      "link": "None",
+      "album": "hold_your_colour"
+    },
+    {
+      "name": "showdown",
+      "id": 15,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "different",
+      "id": 16,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "propane_nightmares",
+      "id": 17,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "visions",
+      "id": 18,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "midnight_runner",
+      "id": 19,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "the_other_side",
+      "id": 20,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "mutiny",
+      "id": 21,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "9000_miles",
+      "id": 22,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "granite",
+      "id": 23,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "the_tempest",
+      "id": 24,
+      "link": "None",
+      "album": "in_silico"
+    },
+    {
+      "name": "genesis",
+      "id": 25,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "salt_in_the_wounds",
+      "id": 26,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "watercolour",
+      "id": 27,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "set_me_on_fire",
+      "id": 28,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "crush",
+      "id": 29,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "under_the_waves",
+      "id": 30,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "immunize",
+      "id": 31,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "the_island_pt1",
+      "id": 32,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "the_island_pt2",
+      "id": 33,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "comprachicos",
+      "id": 34,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "the_vulture",
+      "id": 35,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "witchcraft",
+      "id": 36,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "self_vs_self",
+      "id": 37,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "the_fountain",
+      "id": 38,
+      "link": "None",
+      "album": "immersion"
+    },
+    {
+      "name": "encoder",
+      "id": 39,
+      "link": "None",
+      "album": "immersion"
+    }
+    ]
+}
