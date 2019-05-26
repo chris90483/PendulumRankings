@@ -3,7 +3,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main_page">
 <head>
     <title>Pendulum Rankings</title>
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
 <div id="main_text_container">
     <h1 class="main_title title">Pendulum Rankings</h1>
-    <h3 class="sub_title title"><a href="playground.php">Rank</a> your favourite Pendulum songs<br> and see what <a href="playground.php">others think!</a></h3>
+    <h3 class="sub_title title"><a href="submit.php">Rank</a> your favourite Pendulum songs<br> and see what <a href="ra">others think!</a></h3>
 </div>
 </body>
 </html>

@@ -1,0 +1,12 @@
+.spotify_embed {
+    width : 100%;
+    height: 10vh;
+}
+
+@media only screen and (min-width: 812px) {
+    .spotify_embed {
+        width: 33%;
+        height: 25vh;
+    }
+}
+
