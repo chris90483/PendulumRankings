@@ -9,6 +9,7 @@ create table songs (
     id bigint not null auto_increment,
     link varchar(255),
     album varchar(255),
+    name varchar(255),
     primary key (id)
 );
 

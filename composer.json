@@ -3,7 +3,9 @@
     "description": "Website to rank Pendulum songs",
     "type": "project",
     "require": {
-        "slim/slim": "3.12"
+        "slim/slim": "3.12",
+        "ext-json": "*",
+        "ext-mysqli": "*"
     },
     "license": "MIT"
 }
