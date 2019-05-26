@@ -25,6 +25,9 @@
 html {
     height: 100vh;
     background-image : radial-gradient(rgb(12, 80, 12), rgb(0, 0, 0));
+}
+
+#main_page {
     background-size: 200% 200%;
 
     /* animation stuffs */
@@ -68,3 +71,4 @@ html {
 #main_text_container {
     margin-top : 40vh;
 }
+
