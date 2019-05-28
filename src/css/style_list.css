@@ -27,12 +27,9 @@ th, td {
     -webkit-text-fill-color: transparent;
 }
 
-.song_rank {
+.song-album, .song_title, .song_rank, .avg_rank {
     font-size : 200%;
-}
-
-.song_title {
-    font-size : 200%;
+    text-align : center;
 }
 
 .song_listen th {

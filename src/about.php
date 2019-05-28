@@ -40,7 +40,7 @@
     is public.</h3>
 <br>
     <h1 class="about_title main_title title">Frontend</h1>
-    <h3 class="about_text sub_title title">The visuals were made with CSS and <a href="https://jquery.com/">JQuery</a>.
+    <h3 class="about_text sub_title title">The visuals were made with <a href="https://www.w3schools.com/w3css/">W3.CSS</a> and <a href="https://jquery.com/">JQuery</a>.
         Table ordering was made possible by <a href="https://sindu12jun.github.io/table-dragger/">
             table-dragger.</a>The font you are reading is Google's
         <a href="https://fonts.google.com/specimen/Orbitron?selection.family=Orbitron">

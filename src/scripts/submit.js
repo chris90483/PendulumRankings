@@ -20,6 +20,7 @@ function showSubmit() {
     document.getElementById("submission_msg").style.display = "block";
     document.getElementById("submit_confirm").style.display = "block";
     document.getElementById("submit_deconfirm").style.display = "block";
+    window.scrollTo(0,document.body.scrollHeight);
 }
 
 function submit() {
