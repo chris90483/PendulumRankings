@@ -1,238 +1,238 @@
 {
   "songs": [
     {
-      "name": "prelude",
+      "name": "Prelude",
       "id": 1,
       "link": "https://open.spotify.com/track/4gsV4DN1YbODNeeGYaakol",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "slam",
+      "name": "Slam",
       "id": 2,
       "link": "https://open.spotify.com/track/5iafDaZllVA8NXPr7ciK1C",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "plasticworld",
+      "name": "Plasticworld Ft. Fats & TC",
       "id": 3,
       "link": "https://open.spotify.com/track/3F5fn44Fa9HuTvOb2CTEg9",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "fasten_your_seatbelt",
+      "name": "Fasten Your Seatbelt Ft. The Freestylers",
       "id": 4,
       "link": "https://open.spotify.com/track/7IpNuj9NNmfR09pE5nrKE9",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "through_the_loop",
+      "name": "Through The Loop",
       "id": 5,
       "link": "https://open.spotify.com/track/4TjwdrfkKIXQZk4QtLuM1I",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "sounds_of_life",
+      "name": "Sounds Of Life Ft. Jasmine Yee",
       "id": 6,
       "link": "https://open.spotify.com/track/2UibPiVJSyWz3qCHqrzSMo",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "girl_in_the_fire",
+      "name": "Girl In The Fire",
       "id": 7,
       "link": "https://open.spotify.com/track/3RB7hfbKipi3rtGCT5IGqq",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "tarantula",
+      "name": "Tarantula",
       "id": 8,
       "link": "https://open.spotify.com/track/7ifq3etzDP60X1IRaFVngl",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "out_here",
+      "name": "Out Here",
       "id": 9,
       "link": "https://open.spotify.com/track/07ekvzDWXVlEAltPY1jwFJ",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "hold_your_colour",
+      "name": "Hold Your Colour",
       "id": 10,
       "link": "https://open.spotify.com/track/2pZXlPFnqc1uqEKFE7SjwQ",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "the_terminal",
+      "name": "The Terminal",
       "id": 11,
       "link": "https://open.spotify.com/track/0tNXpm7QwUTMm7lIRPWrEs",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "streamline",
+      "name": "Streamline",
       "id": 12,
       "link": "https://open.spotify.com/track/1YutVAWwucQytCkaM82PIN",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "blood_sugar",
+      "name": "Blood Sugar",
       "id": 13,
       "link": "https://open.spotify.com/track/3JYcbD7v7VaPVJ1Z0QChZU",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "axle_grinder",
+      "name": "Axle Grinder",
       "id": 14,
       "link": "https://open.spotify.com/track/6bmbOLEemcdv2hCgpxd6fA",
-      "album": "hold_your_colour"
+      "album": "Hold Your Colour"
     },
     {
-      "name": "showdown",
+      "name": "Showdown",
       "id": 15,
       "link": "https://open.spotify.com/track/1kvnmJ67M3ByVx4y3ou2iP",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "different",
+      "name": "Different",
       "id": 16,
       "link": "https://open.spotify.com/track/0vsOxIBK36keLH8Bezie9A",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "propane_nightmares",
+      "name": "Propane Nightmares",
       "id": 17,
       "link": "https://open.spotify.com/track/6tC2iHfUlzB2W4ntXXL2BH",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "visions",
+      "name": "Visions",
       "id": 18,
       "link": "https://open.spotify.com/track/7FD0CKDpCLiyt91NZqEhhf",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "midnight_runner",
+      "name": "Midnight Runner",
       "id": 19,
       "link": "https://open.spotify.com/track/4y1MYOnc9zzwNa8FMiNFh1",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "https://open.spotify.com/track/3GCucY8KSMS80NEU0ey0by",
+      "name": "The Other Side",
       "id": 20,
-      "link": "None",
-      "album": "in_silico"
+      "link": "https://open.spotify.com/track/3GCucY8KSMS80NEU0ey0by",
+      "album": "In Silico"
     },
     {
-      "name": "mutiny",
+      "name": "Mutiny",
       "id": 21,
       "link": "https://open.spotify.com/track/602avAJ0uHc0mSXlRhv0L5",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "9000_miles",
+      "name": "9,000 Miles",
       "id": 22,
       "link": "https://open.spotify.com/track/10s9tSE1e8RXSufhzw9Aw3",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "granite",
+      "name": "Granite",
       "id": 23,
       "link": "https://open.spotify.com/track/3aiycOKS6P30BnR7dUfrnA",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "the_tempest",
+      "name": "The Tempest",
       "id": 24,
       "link": "https://open.spotify.com/track/6gTQubOSdry0ievEXvhzxd",
-      "album": "in_silico"
+      "album": "In Silico"
     },
     {
-      "name": "genesis",
+      "name": "Genesis",
       "id": 25,
       "link": "https://open.spotify.com/track/7wZtIGsr1acUjLQMPIpM9A",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "salt_in_the_wounds",
+      "name": "Salt In The Wounds",
       "id": 26,
       "link": "https://open.spotify.com/track/4ESOC1Jott4MYNH9cYuF8z",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "watercolour",
+      "name": "Watercolour",
       "id": 27,
       "link": "https://open.spotify.com/track/5ami95W9OOWQPwrBb5tud5",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "set_me_on_fire",
+      "name": "Set Me On Fire",
       "id": 28,
       "link": "https://open.spotify.com/track/5E1UIRcuHd7Rr7PYbQSEOu",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "crush",
+      "name": "Crush",
       "id": 29,
       "link": "https://open.spotify.com/track/6hzwfFKrTabeUsW5SWti17",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "under_the_waves",
+      "name": "Under The Waves",
       "id": 30,
       "link": "https://open.spotify.com/track/5AhJXm6nrCNDjVphyBUeLH",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "immunize",
+      "name": "Immunize",
       "id": 31,
       "link": "https://open.spotify.com/track/75Ik1zcZSvXSVCFHPwQr4E",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "the_island_pt1",
+      "name": "The Island - Pt.I (Dawn)",
       "id": 32,
       "link": "https://open.spotify.com/track/1Thv8uCYzyOFC7PME9J936",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "the_island_pt2",
+      "name": "The Island - Pt.II (Dusk)",
       "id": 33,
       "link": "https://open.spotify.com/track/26s79pNvksAh8tlEembKm3",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "comprachicos",
+      "name": "Comprachicos",
       "id": 34,
       "link": "https://open.spotify.com/track/2ZIJUwprFZrAaZCRKYfAno",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "the_vulture",
+      "name": "The Vulture",
       "id": 35,
       "link": "https://open.spotify.com/track/3cNsLpqu5TGoGKwM6cyZXB",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "witchcraft",
+      "name": "Witchcraft",
       "id": 36,
       "link": "https://open.spotify.com/track/4Y2glvLjQGOb4dXnwm1hQf",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "self_vs_self",
+      "name": "Self vs Self Ft. In Flames",
       "id": 37,
       "link": "https://open.spotify.com/track/2lN6G35gsXkA3xzPYqmis5",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "the_fountain",
+      "name": "The Fountain Ft. Steven Wilson",
       "id": 38,
       "link": "https://open.spotify.com/track/5blXK1R7GYL7gY2PVGxC90",
-      "album": "immersion"
+      "album": "Immersion"
     },
     {
-      "name": "encoder",
+      "name": "Encoder",
       "id": 39,
       "link": "https://open.spotify.com/track/1SgUE0s8KGfJW9JeuN0ns2",
-      "album": "immersion"
+      "album": "Immersion"
     }
     ]
 }
