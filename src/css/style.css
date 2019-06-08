@@ -31,9 +31,9 @@ html {
     background-size: 200% 200%;
 
     /* animation stuffs */
-    -webkit-animation: rotate 40s ease infinite;
-    -moz-animation: rotate 40s ease infinite;
-    animation : rotate 40s ease infinite;
+    -webkit-animation: rotate 40s infinite;
+    -moz-animation: rotate 40s infinite;
+    animation : rotate 40s infinite;
 }
 
 .main_title {
@@ -42,6 +42,28 @@ html {
 
 .sub_title {
     font-size : 2.5vh;
+}
+
+.listen_button {
+    color : white;
+    background-color : white;
+    border-radius : 20%;
+    border : 1px solid white;
+    padding-left : 1em;
+    padding-right : 1em;
+    font-family : 'Orbitron', sans-serif;
+    letter-spacing: 0.15em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.listen_button:hover {
+    border: 2px solid white;
+    cursor : pointer;
+}
+
+.listen_button:focus {
+    background-color : rgb(56, 99, 255);
 }
 
 .sub_title, .main_title, .table_title {

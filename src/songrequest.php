@@ -1,5 +1,9 @@
 <?php
-// give an mp3 when requested
+// give the path to the mp3 file when requested
 $songRequest = $_REQUEST["getSong"];
-echo "mp3s/" . $songRequest . ".mp3";
+if (is_numeric($songRequest)) {
+    echo "mp3s/" . $songRequest . ".mp3";
+} else {
+    echo "1337";
+}
 ?>

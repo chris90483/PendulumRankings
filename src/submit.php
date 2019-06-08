@@ -15,7 +15,13 @@
 
 <body>
 
-<?php include 'nav.html' ?>
+<?php include 'nav.html';
+$mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
+
+$query = "SELECT * FROM songs ORDER BY name";
+
+$result = $mysqli->query($query);
+?>
 <br><br>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
@@ -34,21 +40,16 @@
                         <td class="unranked_divider sub_title title"><b>Drag songs above this line to rank them</b></td>
                         <td></td>
                     </tr>
+                    <?php $i = 1;
+                    foreach($result as $item) {
+                    ?>
                     <tr class="song_entry">
                         <td class="draggable song_rank">-</td>
-                        <td class="draggable song_title"><?php echo "Propane Nightmares" ?></td>
-                        <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/6tC2iHfUlzB2W4ntXXL2BH" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                    </tr>
-                    <tr class="song_entry">
-                        <td class="draggable song_rank">-</td>
-                        <td class="draggable song_title"><?php echo "Hold Your Colour" ?></td>
-                        <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/2pZXlPFnqc1uqEKFE7SjwQ" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                    </tr>
-                    <tr class="song_entry">
-                        <td class="draggable song_rank">-</td>
-                        <td class="draggable song_title"><?php echo "Visions" ?></td>
-                        <td class="song_listen"><iframe src="https://open.spotify.com/embed/track/7FD0CKDpCLiyt91NZqEhhf" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></td>
-                    </tr>
+                        <td class="draggable song_title"><?php echo $item['name'] ?></td>
+                        <td class="song_listen"><div class="listen_button" onclick="changeAudio(<?php echo $item['id'] ?>)">♫</div></audio></td>
+                        <?php
+                        $i++;
+                        } ?>
                 </tbody>
             </table>
         </div>

@@ -41,7 +41,7 @@
             <td class="song_rank"><?php echo $i ?></td>
             <td class="song_title"><?php echo $item['name'] ?></td>
             <td class="avg_rank"><?php echo $item['average_rank'] ?></td>
-            <td class="song_listen"><button onclick="changeAudio(<?php echo $item['id'] ?>)">&lt;click&gt;</button></audio></td>
+            <td class="song_listen"><div class="listen_button" onclick="changeAudio(<?php echo $item['id'] ?>)">♫</div></audio></td>
             <?php
          $i++;
          } ?>
