@@ -58,7 +58,27 @@ function showSubmit() {
 }
 
 function submit() {
-    console.log("submit button has been clicked");
+    let rankings = document.getElementsByClassName("song_entry");
+    let requestText = "";
+    for (let i = 0; i < rankings.length; i++) {
+        console.log(i)
+        let row = rankings[i];
+        if (row.id === "unranked_divider") {
+            break;
+        }
+        requestText += ((i + 1) + "=" + row.getElementsByClassName("song_title")[0].innerHTML + ";");
+    }
+
+    let request = new XMLHttpRequest();
+    request.open("POST", "submissionreceiver.php?submission=" + requestText, true);
+    request.send();
+
+    request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+            alert("submission received, thanks!")
+        }
+    };
+    document.location = "rankings.php"
 }
 
 function updateRanks() {
