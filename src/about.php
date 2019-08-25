@@ -26,7 +26,7 @@
 <?php include 'nav.html' ?>
 <br><br><br>
     <h1 class="about_title main_title title">About</h1>
-    <h3 class="about_text sub_title title">Welcome! This website was made to poll the popularity of each song produced by the band Pendulum.</h3>
+    <h3 class="about_text sub_title title">Welcome! This website was made to poll the popularity of each (album) song produced by the band Pendulum.</h3>
 <br>
     <h1 class="about_title main_title title">How?</h1>
     <h3 class="about_text sub_title title">You can <a href="submit.php">Submit</a> a list of your favourite Pendulum songs. Only the songs that you
