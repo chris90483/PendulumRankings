@@ -32,6 +32,15 @@ th, td {
     text-align : center;
 }
 
+.song_rank:hover td {
+    cursor : text;
+    color : #a0a0a0;
+}
+
+.song_rank:active td {
+    color : #a0a0a0;
+}
+
 .song_listen th {
 
 }

@@ -44,7 +44,7 @@ $result = $mysqli->query($query);
                     foreach($result as $item) {
                     ?>
                     <tr class="song_entry">
-                        <td class="draggable song_rank">-</td>
+                        <td class="draggable song_rank" contenteditable="false">-</td>
                         <td class="draggable song_title"><?php echo $item['name'] ?></td>
                         <td class="song_listen"><div class="listen_button" onclick="changeAudio(<?php echo $item['id'] ?>)">♫</div></audio></td>
                         <?php

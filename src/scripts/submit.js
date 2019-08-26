@@ -1,5 +1,6 @@
-let audio = undefined
-let currentAudioId = -1
+let audio = undefined;
+let currentAudioId = -1;
+let currentRankEditing = undefined;
 
 function changeAudio(id) {
     if (!(audio === undefined)) {
@@ -32,15 +33,6 @@ function getAudio(id) {
     request.send();
 }
 
-$("document").ready(function(){
-    tableDragger(document.getElementById("song_list"), {
-        mode : "row",
-        dragHandler : ".draggable",
-        onlyBody : true
-    });
-    document.getElementsByClassName("navitem")[2].innerText = "Submit";
-    document.addEventListener("mouseup", updateRanks, false);
-});
 
 function deconfirmSubmit() {
     document.getElementById("submit").style.display = "block";
@@ -89,10 +81,40 @@ function updateRanks() {
             seen_divider = true;
             continue;
         }
-        if (seen_divider) {
-            songs[i].getElementsByClassName("song_rank")[0].innerHTML = "-";
-        } else {
-            songs[i].getElementsByClassName("song_rank")[0].innerHTML = (i + 1).toString();
+        let rankCell = songs[i].getElementsByClassName("song_rank")[0];
+        if (rankCell !== currentRankEditing) {
+            if (seen_divider) {
+                rankCell.innerHTML = "-";
+            } else {
+                songs[i].getElementsByClassName("song_rank")[0].innerHTML = (i + 1).toString();
+            }
         }
     }
 }
+
+function clearText(elem) {
+    elem.innerText = "";
+}
+
+function setEditing(elem) {
+    currentRankEditing = elem;
+    elem.addEventListener('keydown', function(e) {
+            currentRankEditing = undefined;
+    })
+}
+
+
+$("document").ready(function(){
+    tableDragger(document.getElementById("song_list"), {
+        mode : "row",
+        dragHandler : ".draggable",
+        onlyBody : true
+    });
+    document.getElementsByClassName("navitem")[2].innerText = "Submit";
+    document.addEventListener("mouseup", updateRanks, false);
+});
+
+// elem.on('keydown', function(e) {
+//     console.log(e.key);
+//     console.log(typeof e.key);
+// });

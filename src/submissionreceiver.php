@@ -39,4 +39,5 @@ foreach ($rankings as $ranking) {
 }
 fclose($debugfile);
 
+include 'autocalc.php';
 ?>
