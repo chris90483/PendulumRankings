@@ -34,4 +34,10 @@ function getAudio(id) {
 
 $("document").ready(function () {
     document.getElementsByClassName("navitem")[1].innerText = "Rankings";
-})
+    let avgranks = document.getElementsByClassName("avg_rank")
+    for (let i = 1; i < avgranks.length; i++) {
+        let num = Number(avgranks[i].innerText);
+        num = Math.round( num * 10) / 10
+        avgranks[i].innerText = num;
+    }
+});
