@@ -64,6 +64,9 @@ fabric.properties
 # Editor-based Rest Client
 .idea/httpRequests
 
+# DB config
+src/config.php
+
 # vendor
 vendor
 
