@@ -1,10 +1,5 @@
-let audio = undefined;
-let currentAudioId = -1;
-let currentRankEditing = undefined;
-
-function isNumber(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-}
+let audio = undefined
+let currentAudioId = -1
 
 function changeAudio(id) {
     if (!(audio === undefined)) {
@@ -37,6 +32,15 @@ function getAudio(id) {
     request.send();
 }
 
+$("document").ready(function(){
+    tableDragger(document.getElementById("song_list"), {
+        mode : "row",
+        dragHandler : ".draggable",
+        onlyBody : true
+    });
+    document.getElementsByClassName("navitem")[2].innerText = "Submit";
+    document.addEventListener("mouseup", updateRanks, false);
+});
 
 function deconfirmSubmit() {
     document.getElementById("submit").style.display = "block";
@@ -79,43 +83,16 @@ function submit() {
 
 function updateRanks() {
     let songs = document.getElementsByClassName("song_entry");
-    for (let j = 0; j < songs.length; j++) {
-        for (let i = 0; i < songs.length - 1; i++) {
-            if (Number(songs[i].getElementsByClassName("song_rank")[0].innerText.toString()) > Number(songs[i + 1].getElementsByClassName("song_rank")[0].innerText.toString())) {
-                let temp = songs[i];
-                songs[i] = songs[i + 1];
-                songs[i + 1] = temp;
-            }
+    let seen_divider = false;
+    for (let i = 0; i < songs.length; i++) {
+        if (songs[i].id === "unranked_divider") {
+            seen_divider = true;
+            continue;
+        }
+        if (seen_divider) {
+            songs[i].getElementsByClassName("song_rank")[0].innerHTML = "-";
+        } else {
+            songs[i].getElementsByClassName("song_rank")[0].innerHTML = (i + 1).toString();
         }
     }
 }
-
-function setEditing(elem) {
-    updateRanks();
-    currentRankEditing = elem;
-    elem.innerText = "";
-}
-
-function edit(e) {
-    console.log(e.key);
-    if (currentRankEditing !== undefined) {
-        if (e.key === "Enter") {
-            currentRankEditing = undefined;
-            updateRanks();
-        } else if (isNumber(e.key)) {
-            currentRankEditing.innerText += e.key;
-        } else if (e.key === "Backspace") {
-            currentRankEditing.innerText = currentRankEditing.innerText.toString().slice(0,-1);
-        }
-    }
-}
-
-$("document").ready(function(){
-    document.getElementsByClassName("navitem")[2].innerText = "Submit";
-    document.addEventListener("keydown", edit);
-});
-
-// elem.on('keydown', function(e) {
-//     console.log(e.key);
-//     console.log(typeof e.key);
-// });
