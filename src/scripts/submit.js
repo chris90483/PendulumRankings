@@ -2,6 +2,10 @@ let audio = undefined;
 let currentAudioId = -1;
 let currentRankEditing = undefined;
 
+function isNumber(n) {
+    return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
 function changeAudio(id) {
     if (!(audio === undefined)) {
         if (!(currentAudioId === id)) {
@@ -75,43 +79,40 @@ function submit() {
 
 function updateRanks() {
     let songs = document.getElementsByClassName("song_entry");
-    let seen_divider = false;
-    for (let i = 0; i < songs.length; i++) {
-        if (songs[i].id === "unranked_divider") {
-            seen_divider = true;
-            continue;
-        }
-        let rankCell = songs[i].getElementsByClassName("song_rank")[0];
-        if (rankCell !== currentRankEditing) {
-            if (seen_divider) {
-                rankCell.innerHTML = "-";
-            } else {
-                songs[i].getElementsByClassName("song_rank")[0].innerHTML = (i + 1).toString();
+    for (let j = 0; j < songs.length; j++) {
+        for (let i = 0; i < songs.length - 1; i++) {
+            if (Number(songs[i].getElementsByClassName("song_rank")[0].innerText.toString()) > Number(songs[i + 1].getElementsByClassName("song_rank")[0].innerText.toString())) {
+                let temp = songs[i];
+                songs[i] = songs[i + 1];
+                songs[i + 1] = temp;
             }
         }
     }
 }
 
-function clearText(elem) {
+function setEditing(elem) {
+    updateRanks();
+    currentRankEditing = elem;
     elem.innerText = "";
 }
 
-function setEditing(elem) {
-    currentRankEditing = elem;
-    elem.addEventListener('keydown', function(e) {
+function edit(e) {
+    console.log(e.key);
+    if (currentRankEditing !== undefined) {
+        if (e.key === "Enter") {
             currentRankEditing = undefined;
-    })
+            updateRanks();
+        } else if (isNumber(e.key)) {
+            currentRankEditing.innerText += e.key;
+        } else if (e.key === "Backspace") {
+            currentRankEditing.innerText = currentRankEditing.innerText.toString().slice(0,-1);
+        }
+    }
 }
 
-
 $("document").ready(function(){
-    tableDragger(document.getElementById("song_list"), {
-        mode : "row",
-        dragHandler : ".draggable",
-        onlyBody : true
-    });
     document.getElementsByClassName("navitem")[2].innerText = "Submit";
-    document.addEventListener("mouseup", updateRanks, false);
+    document.addEventListener("keydown", edit);
 });
 
 // elem.on('keydown', function(e) {
