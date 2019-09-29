@@ -1,3 +1,7 @@
+<?php
+$configs = include('config.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en" id="main_page">
 <head>
@@ -16,7 +20,7 @@
 <body>
 
 <?php include 'nav.html';
-$mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
+$mysqli = new mysqli($configs['dbhost'], $configs['dbuser'], $configs['dbpassword'], $configs['dbname']);
 
 $query = "SELECT * FROM songs ORDER BY name";
 

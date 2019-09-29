@@ -1,4 +1,8 @@
 <?php
+$configs = include('config.php');
+?>
+
+<?php
     // gebruik var_dup(arg) om php te debuggen
 ?>
 

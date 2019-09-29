@@ -1,5 +1,9 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
+$configs = include('config.php');
+?>
+
+<?php
+$mysqli = new mysqli($configs['dbhost'], $configs['dbuser'], $configs['dbpassword'], $configs['dbname']);
 $songs = json_decode(fread(fopen("../songs.json", "r"), filesize("../songs.json")));
 $avg_ranks = [];
 

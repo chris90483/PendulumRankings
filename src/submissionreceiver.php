@@ -1,5 +1,9 @@
 <?php
-$mysqli = new mysqli('localhost', 'root', 'koffieislekker', 'PendulumRankingsDB');
+$configs = include('config.php');
+?>
+
+<?php
+$mysqli = new mysqli($configs['dbhost'], $configs['dbuser'], $configs['dbpassword'], $configs['dbname']);
 $songs = json_decode(fread(fopen("../songs.json", "r"), filesize("../songs.json")));
 
 
@@ -30,6 +34,7 @@ if ($mysqli->query($statement) === TRUE) {
 foreach ($rankings as $ranking) {
     $parts = explode("=", $ranking);
     if (count($parts) == 2) {
+        # TODO: Remove SQL Injection
         $number = $parts[0];
         $title = $parts[1];
         $statement = "INSERT INTO votes_song_" . getIdByName($title) . " (`rank`, `vote`) VALUES ('" . $number . "', '" . $mysqli->insert_id . "')";
